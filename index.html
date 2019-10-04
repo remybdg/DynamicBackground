@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Dynamic Background</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="container" onmousemove="onmousemoveCont(event)">
+
+		</div>
+		<div id="config">
+
+			<form>	 
+				<H2> Activités </H2> 
+				<div>
+					<input type="radio" id="PinkVelvet" class="activity" name="activity" value="PinkVelvet">
+					<label for="PinkVelvet">Pink Velvet</label>
+				</div>
+				<div>
+					<input type="radio" id="BigArrow" class="activity" name="activity" value="BigArrow">
+					<label for="BigArrow">Big Arrow</label>
+				</div>
+				<div>
+					<input type="radio" id="slidingPanel" class="activity" name="activity" value="slidingPanel">
+					<label for="slidingPanel">Sliding Panel</label>
+				</div>
+				<div>
+					<input type="radio" id="paint" class="activity" name="activity" value="Paint">
+					<label for="paint">Paint</label>
+				</div>
+
+			</form>
+<br>
+
+			
+			<form id="sizeSelector" class="">	  
+				<h3> taille des tuiles </h3>
+				<div>
+					<input type="radio" id="60" class="size" name="drone" value="60">
+					<label for="60">S</label>
+				</div>
+				<div>
+					<input type="radio" id="40" class="size" name="drone" value="40">
+					<label for="40">M</label>
+				</div>
+				<div>
+					<input type="radio" id="20" class="size" name="drone" value="20">
+					<label for="20">L</label>
+				</div>
+			</form>
+			<br>
+			<!-- <button onclick="getBlackedTiles()">Blacked !
+			<br> -->
+			<button onclick="fillContainerWithTiles()">GO !
+			</button>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
